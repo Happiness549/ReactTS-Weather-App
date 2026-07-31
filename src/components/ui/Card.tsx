@@ -1,8 +1,14 @@
-import React from 'react'
+import React, { type ReactNode } from 'react'
+import { Text } from '../Text/Text'
+interface CardProps{
+    children: ReactNode;
+}
 
-
-export const Card = () => {
+export const Card:React.FC<CardProps> = ({children}) => {
   return (
-    <div>Card</div>
+    <div className='rounded=3xl bg-white p-6 shadow-lg'>
+        {children}
+
+    </div>
   )
 }
