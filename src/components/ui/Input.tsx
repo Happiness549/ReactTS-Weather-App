@@ -15,7 +15,7 @@ export const Input:React.FC<InputProps> = ({type, placeholder, value, onChange})
           placeholder={placeholder}
           value={value}
           onChange={onChange}
-          className='w-full bg-transparent outline-none'
+          className='w-full  outline-none'
         />
 
     </div>
