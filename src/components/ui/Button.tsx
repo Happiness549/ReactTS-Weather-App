@@ -1,13 +1,14 @@
 import React, { type ReactNode } from 'react'
+import { Text } from '../Text/Text';
 
 interface ButtonProps{
-    children: ReactNode;
+    text: string
     onClick?: () => void;
     type?: "button" | "submit" | "reset";
     className?: string;
 }
 
-export const Button:React.FC<ButtonProps> = ({children, onClick, type,className}) => {
+export const Button:React.FC<ButtonProps> = ({text, onClick, type,className}) => {
   return (
     <div>
         <button
@@ -26,12 +27,10 @@ export const Button:React.FC<ButtonProps> = ({children, onClick, type,className}
             duration-300
             cursor-pointer
             `}
-        
         >
-            {children}
-        </button>
+            {text}
         
-        
+        </button>   
     </div>
   )
 }

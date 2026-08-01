@@ -10,16 +10,11 @@ function App() {
   return (
     <>
       <div className='min-h-screen  py-10'>
-        <Container>
-          <h1 className='text-4xl font-bold'>SkyWeather</h1>
-
-        </Container>
-        <Card>
-          <p className='mt-2 text-slate-500 font-bold text-slate-800'>Welcome to my beautiful App</p>
-        </Card>
-        <Button>
-          Serch Weather
-        </Button>
+        <Container />
+        <Card />
+        <Button text={'Search Weather'}/>
+        
+        
         
       </div>
     </>
