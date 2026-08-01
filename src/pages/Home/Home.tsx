@@ -5,7 +5,7 @@ import {SearchBar} from '../../components/SearchBar/SearchBar'
 
 export const Home = () => {
   return (
-    <div>
+    <div className='min-h-screen bg-sky-100'>
         <Container>
             <Navbar/>
             <SearchBar/>
