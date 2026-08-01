@@ -5,6 +5,7 @@ import {SearchBar} from '../../components/SearchBar/SearchBar'
 import { WeatherCard } from '../../components/WeatherCard/WeatherCard'
 import { WeatherStats } from '../../components/WeatherCard/WeatherStats'
 import {WeatherAlerts} from '../../components/WeatherCard/WeatherAlerts'
+import { Settings } from '../../Settings/Settings'
 
 
 export const Home = () => {
@@ -13,7 +14,7 @@ export const Home = () => {
     <Container>
         <Navbar />
         <SearchBar />
-        
+
         <div className='flex flex-col md:flex-row gap-6 items-start mt-6 w-full'>
             <div className='relative w-full md:w-auto'>
                 <WeatherCard />
@@ -21,8 +22,9 @@ export const Home = () => {
             </div>  
             <div className='w-full flex-1'>
                 <WeatherAlerts />
+                <Settings/>
             </div>
-            
+
         </div>
     </Container>
 </div>
