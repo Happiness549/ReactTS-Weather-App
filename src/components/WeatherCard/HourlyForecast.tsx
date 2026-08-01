@@ -34,24 +34,43 @@ export const HourlyForecast = () => {
             <Text variant={'p'}><Sun/></Text>
             <Text variant={'p'}><Cloud/></Text>
             <Text variant={'p'}><CloudLightning/></Text>
-            <Text variant={'span'}><CloudRain/></Text>
-            <Text variant={'span'}><Sun/></Text>
-            <Text variant={'span'}><Sun/></Text>
-            <Text variant={'span'}><Cloud/></Text>
-            <Text variant={'span'}><Cloud/></Text>
-            <Text variant={'span'}><CloudLightning/></Text>
-            <Text variant={'span'}><CloudLightning/></Text>
-            <Text variant={'span'}><CloudRain/></Text>
-            <Text variant={'span'}><CloudRain/></Text>
+            <Text variant={'p'}><CloudRain/></Text>
+            <Text variant={'p'}><Sun/></Text>
+            <Text variant={'p'}><Sun/></Text>
+            <Text variant={'p'}><Cloud/></Text>
+            <Text variant={'p'}><Cloud/></Text>
+            <Text variant={'p'}><CloudLightning/></Text>
+            <Text variant={'p'}><CloudLightning/></Text>
+            <Text variant={'p'}><CloudRain/></Text>
+            <Text variant={'p'}><CloudRain/></Text>
             <Text variant={'p'}><Sun/></Text>
             <Text variant={'p'}><Cloud/></Text>
             <Text variant={'p'}><CloudLightning/></Text>
-            <Text variant={'span'}><CloudRain/></Text>
-            <Text variant={'span'}><Sun/></Text>
-            <Text variant={'span'}><Sun/></Text>
-            <Text variant={'span'}><Cloud/></Text>
-          
-
+            <Text variant={'p'}><CloudRain/></Text>
+            <Text variant={'p'}><Sun/></Text>
+            <Text variant={'p'}><Sun/></Text>
+            <Text variant={'p'}><Cloud/></Text>
+        </div>
+        <div className='flex gap-8 mt-5'>
+            <Text variant={'p'}></Text>
+            <Text variant={'p'}>23 {"\u00B0"} c</Text>
+            <Text variant={'p'}>23 {"\u00B0"} c</Text>
+            <Text variant={'p'}>23 {"\u00B0"} c</Text>
+            <Text variant={'p'}>23 {"\u00B0"} c</Text>
+            <Text variant={'p'}>23 {"\u00B0"} c</Text>
+            <Text variant={'p'}>23 {"\u00B0"} c</Text>
+            <Text variant={'p'}>23 {"\u00B0"} c</Text>
+            <Text variant={'p'}>23 {"\u00B0"} c</Text>
+            <Text variant={'p'}>23 {"\u00B0"} c</Text>
+            <Text variant={'p'}>23 {"\u00B0"} c</Text>
+            <Text variant={'p'}>23 {"\u00B0"} c</Text>
+            <Text variant={'p'}>23 {"\u00B0"} c</Text>
+            <Text variant={'p'}>23 {"\u00B0"} c</Text>
+            <Text variant={'p'}>23 {"\u00B0"} c</Text>
+            <Text variant={'p'}>23 {"\u00B0"} c</Text>
+            <Text variant={'p'}>23 {"\u00B0"} c</Text>
+            <Text variant={'p'}>23 {"\u00B0"} c</Text>
+            <Text variant={'p'}>23 {"\u00B0"} c</Text>  
         </div>
     </Card>
   )
