@@ -7,11 +7,10 @@ function App() {
   
 
   return (
-    <>
-      <div>
+      <div >
         <Home/>
       </div>
-    </>
+  
   )
 }
 
