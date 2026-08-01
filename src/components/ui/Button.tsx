@@ -18,7 +18,7 @@ export const Button:React.FC<ButtonProps> = ({text, onClick, type,className}) =>
             px-6
             py-3
             rounded-xl
-            bg-blue-600
+            bg-blue-400
             text-white
             font-semibold
             shadow-md

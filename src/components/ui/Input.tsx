@@ -9,13 +9,12 @@ interface InputProps{
 
 export const Input:React.FC<InputProps> = ({type, placeholder, value, onChange}) => {
   return (
-    <div>
+    <div className='w-full outline-none'> 
         <input 
           type= {type} 
           placeholder={placeholder}
           value={value}
           onChange={onChange}
-          className='w-full  outline-none'
         />
 
     </div>
