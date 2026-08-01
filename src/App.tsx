@@ -1,5 +1,6 @@
 import React from 'react'
 import './App.css'
+import { Home } from './pages/Home/Home'
 
 
 function App() {
@@ -7,8 +8,8 @@ function App() {
 
   return (
     <>
-      <div className='min-h-screen  py-10'>
-     
+      <div>
+        <Home/>
       </div>
     </>
   )
