@@ -6,7 +6,7 @@ import { Button } from '../components/ui/Button'
 
 export const Settings = () => {
   return (
-    <Card className=' w-90 h-40 p-2'>
+    <Card className=' w-90 h-40 p-2 -mt-6 bg-[#343A46]'>
       
       <div className='flex gap-2'>
         <SettingsIcon/>

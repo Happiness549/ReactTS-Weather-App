@@ -7,6 +7,7 @@ import { WeatherStats } from '../../components/WeatherCard/WeatherStats'
 import {WeatherAlerts} from '../../components/WeatherCard/WeatherAlerts'
 import { Settings } from '../../Settings/Settings'
 import { HourlyForecast } from '../../components/WeatherCard/HourlyForecast'
+import { SavedLocations } from '../../components/WeatherCard/SavedLocations'
 
 
 export const Home = () => {
@@ -28,6 +29,7 @@ export const Home = () => {
 
         </div>
         <HourlyForecast/>
+        <SavedLocations/>
     </Container>
 </div>
 

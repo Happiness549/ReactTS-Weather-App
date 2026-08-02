@@ -7,13 +7,16 @@ import { Button } from '../ui/Button'
 
 export const WeatherCard = () => {
   return (
-    <Card className='bg-gradient-to-r from-sky-500 to-cyan-400 w-100 h-100'>
-        <Button text={'Current Weather'}/>
-            <Text variant={'h1'} className='text-base color-red'>Durban</Text>
-            <Text variant={'p'}>Saturday, 17 May</Text>
-            <Sun/>
-            <Text variant={'p'}>14:30</Text>
-            <Text variant={'h2'}>23 {"\u00B0"} c</Text>
+    <Card className='bg-[#343A46] to-cyan-400 w-100 h-100'>
+            <Text variant={'h1'} className='text-6xl text-white'>Durban</Text>
+            <div className='flex gap-40 mt-2'>
+              <Text variant={'p'} className='text-white'>Saturday, 17 May</Text>
+              <Sun className="text-yellow-500 fill-yellow-200" size={62} 
+      />
+            </div>
+            
+            <Text variant={'p'} className='text-white'>14:30</Text>
+            <Text variant={'h2'} className='text-5xl text-white'>23 {"\u00B0"} c</Text>
     </Card>
   )
 }
