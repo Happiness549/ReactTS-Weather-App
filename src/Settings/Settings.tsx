@@ -6,14 +6,18 @@ import { Button } from '../components/ui/Button'
 
 export const Settings = () => {
   return (
-    <Card className='mt-5 w-180 h-60'>
-      <Text variant={'h1'}><SettingsIcon/>Settings</Text>
-      <div className='flex gap 2'>
-        <Button text={'\u00B0C'} />
-        <Button text={'\u00B0F'} className='bg-white'/>
+    <Card className=' w-90 h-40 p-2'>
+      
+      <div className='flex gap-2'>
+        <SettingsIcon/>
+        <Text variant={'h1'}>Settings</Text>
       </div>
-      <Text variant={'h1'}><SettingsIcon/>Theme</Text>
-      <div className='flex'>
+      <div className='flex gap-2'>
+          <Button text={'\u00B0C'} />
+          <Button text={'\u00B0F'} className='bg-white'/>
+      </div>
+      <Text variant={'h1'}>Theme</Text>
+      <div className='flex gap-2'>
          <Button text={'Light'} />
          <Button text={'Dark'} /> 
       </div>

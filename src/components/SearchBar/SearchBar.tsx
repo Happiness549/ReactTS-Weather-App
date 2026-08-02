@@ -10,7 +10,7 @@ export const SearchBar = () => {
   return (
     
     <div >
-        <Card>
+        <Card className='w-200 flex justify-center items-center mt-10 h-16'>
             
             <div className='flex bg-sky-100 rounded-2xl p-3 w-2/3 ml-100 gap-4'>
                  <Search/>

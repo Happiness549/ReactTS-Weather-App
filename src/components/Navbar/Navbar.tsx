@@ -3,6 +3,7 @@ import { Card } from '../ui/Card'
 
 export const Navbar = () => {
   return (
-    <></>
+    <>
+    </>
   )
 }

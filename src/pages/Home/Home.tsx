@@ -11,7 +11,7 @@ import { HourlyForecast } from '../../components/WeatherCard/HourlyForecast'
 
 export const Home = () => {
   return (
-    <div className='min-h-screen bg-sky-100'>
+    <div className='min-h-screen   '>
     <Container>
         <Navbar />
         <SearchBar />
@@ -21,7 +21,7 @@ export const Home = () => {
                 <WeatherCard />
                 <WeatherStats />
             </div>  
-            <div className='w-full flex-1'>
+            <div className='flex flex-col gap-6'>
                 <WeatherAlerts />
                 <Settings/>
             </div>
