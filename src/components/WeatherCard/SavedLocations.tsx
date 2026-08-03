@@ -9,9 +9,9 @@ export const SavedLocations = () => {
     <Card className='w-195 bg-[#343A46]'>
         <div className='flex gap-140'>
              <Text variant={'h1'} className='text-white'>Saved Location</Text>
-             <Search/>
+             <Search className="text-white" size={32} />
         </div>
-        <Map/>
+        <Map className='text-blue'/>
         <Text variant={'p'} className='text-white'>No Saved locations yet</Text>
     </Card>
   )

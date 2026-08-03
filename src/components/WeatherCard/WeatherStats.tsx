@@ -7,16 +7,16 @@ import { Thermometer } from 'lucide-react'
 
 export const WeatherStats = () => {
   return (
-    <Card className='absolute bottom-4 w-95 left-1 h-25 bg-sky-200'>
+    <Card className='absolute bottom-4 w-95 left-1 h-25 bg-black-400'>
         <div className='flex gap-18'>
-            <Text variant={'span'}>Humidity<Droplets/></Text>
-            <Text variant={'span'} className='flex'>Wind<Wind size={15}/></Text>
-            <Text variant={'span'}>Temperature<Thermometer/></Text>
+            <Text variant={'span'} className='text-white'>Humidity<Droplets size={15}/></Text>
+            <Text variant={'span'} className='flex text-white '>Wind<Wind size={15}/></Text>
+            <Text variant={'span'} className='text-white'>Temperature<Thermometer size={15}/></Text>
         </div>
         <div className='flex gap-18 '>
-             <Text variant={'span'}>70%</Text>
-             <Text variant={'span'}>12 km/h</Text>
-             <Text variant={'span'}>1015 hpa</Text>
+             <Text variant={'span'} className='text-white'>70%</Text>
+             <Text variant={'span'} className='text-white'>12 km/h</Text>
+             <Text variant={'span'} className='text-white'>1015 hpa</Text>
         </div>
       
     </Card>

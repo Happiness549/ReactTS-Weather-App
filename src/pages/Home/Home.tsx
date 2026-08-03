@@ -12,7 +12,7 @@ import { SavedLocations } from '../../components/WeatherCard/SavedLocations'
 
 export const Home = () => {
   return (
-    <div className='min-h-screen   '>
+    <div className=''>
     <Container>
         <Navbar />
         <SearchBar />

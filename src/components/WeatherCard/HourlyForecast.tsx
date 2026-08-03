@@ -23,28 +23,28 @@ export const HourlyForecast = () => {
            
         </div>
         <div className='flex gap-13 mt-1'>
-            <Text variant={'p'}><Sun/></Text>
-            <Text variant={'p'}><Cloud/></Text>
-            <Text variant={'p'}><CloudLightning/></Text>
-            <Text variant={'p'}><CloudRain/></Text>
-            <Text variant={'p'}><Sun/></Text>
-            <Text variant={'p'}><Sun/></Text>
-            <Text variant={'p'}><Cloud/></Text>
-            <Text variant={'p'}><Cloud/></Text>
-            <Text variant={'p'}><CloudLightning/></Text>
-            <Text variant={'p'}><CloudLightning/></Text>
+            <Text variant={'p'}><Sun className="text-yellow-500 fill-yellow-200"/></Text>
+            <Text variant={'p'}><Cloud  className="text-white fill-white"/></Text>
+            <Text variant={'p'}><CloudLightning className='text-white fill-white'/></Text>
+            <Text variant={'p'}><CloudRain className='text-white fill-white'/></Text>
+            <Text variant={'p'}><Sun className="text-yellow-500 fill-yellow-200"/></Text>
+            <Text variant={'p'}><Sun className="text-yellow-500 fill-yellow-200"/></Text>
+            <Text variant={'p'}><Cloud className='text-white fill-white'/></Text>
+            <Text variant={'p'}><Cloud className='text-white fill-white'/></Text>
+            <Text variant={'p'}><CloudLightning className='text-white fill-white'/></Text>
+            <Text variant={'p'}><CloudLightning className='text-white fill-white'/></Text>
         </div>
         <div className='flex gap-5 mt-1'>
-            <Text variant={'p'}></Text>
-            <Text variant={'p'} className='text-white'>23 {"\u00B0"} c</Text>
-            <Text variant={'p'} className='text-white'>23 {"\u00B0"} c</Text>
-            <Text variant={'p'} className='text-white'>23 {"\u00B0"} c</Text>
-            <Text variant={'p'} className='text-white'>23 {"\u00B0"} c</Text>
-            <Text variant={'p'} className='text-white'>23 {"\u00B0"} c</Text>
-            <Text variant={'p'} className='text-white'>23 {"\u00B0"} c</Text>
-            <Text variant={'p'} className='text-white'>23 {"\u00B0"} c</Text>
-            <Text variant={'p'} className='text-white'>23 {"\u00B0"} c</Text>
-            <Text variant={'p'} className='text-white'>23 {"\u00B0"} c</Text>
+            <Text variant={'p'} className='text-white ml-1'>23 {"\u00B0"} c</Text>
+            <Text variant={'p'} className='text-white ml-1'>23 {"\u00B0"} c</Text>
+            <Text variant={'p'} className='text-white ml-2'>23 {"\u00B0"} c</Text>
+            <Text variant={'p'} className='text-white ml-3'>23 {"\u00B0"} c</Text>
+            <Text variant={'p'} className='text-white ml-'>23 {"\u00B0"} c</Text>
+            <Text variant={'p'} className='text-white ml-'>23 {"\u00B0"} c</Text>
+            <Text variant={'p'} className='text-white ml-'>23 {"\u00B0"} c</Text>
+            <Text variant={'p'} className='text-white ml-1'>23 {"\u00B0"} c</Text>
+            <Text variant={'p'} className='text-white ml-1'>23 {"\u00B0"} c</Text>
+              <Text variant={'p'} className='text-white ml-'>23 {"\u00B0"} c</Text>
         </div>
     </Card>
   )

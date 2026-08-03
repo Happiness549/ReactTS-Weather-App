@@ -2,3 +2,10 @@
 body{
     background-color: #1F2430;
 }
+
+root{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

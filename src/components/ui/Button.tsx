@@ -8,16 +8,17 @@ interface ButtonProps{
     className?: string;
 }
 
-export const Button:React.FC<ButtonProps> = ({text, onClick, type,className}) => {
+export const Button:React.FC<ButtonProps> = ({text, onClick, type, className}) => {
   return (
     <div>
         <button
+        
         type={type}
         onClick={onClick}
         className={`
             px-6
             py-3
-            rounded-xl
+            rounded-2xl
             bg-blue-400
             text-white
             font-semibold
@@ -26,7 +27,9 @@ export const Button:React.FC<ButtonProps> = ({text, onClick, type,className}) =>
             transition
             duration-300
             cursor-pointer
+            ${className || ''}
             `}
+        
         >
             {text}
         
