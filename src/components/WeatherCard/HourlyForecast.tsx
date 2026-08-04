@@ -1,19 +1,13 @@
 import React from 'react'
 import { Card } from "../ui/Card";
 import { Text } from '../ui/Text';
-import { Sun } from 'lucide-react';
-import { Cloud } from 'lucide-react';
-import { CloudRain } from 'lucide-react';
-import { CloudLightning } from 'lucide-react';
-import type {WeatherData} from '../../types/Weather'
+import type {HourlyData} from '../../types/Weather'
 
-interface HourlyForecastProps {
-  weatherData: WeatherData;
-}
 
-export const HourlyForecast: React.FC<HourlyForecastProps> = ({ weatherData }) => {
 
-  const hourlyData = [
+export const HourlyForecast: React.FC = () => {
+
+  const hourlyData: HourlyData[] = [
     { time: 'Now', emoji: '☀️', temperature: 23, unit: 'C' },
     { time: '06:00', emoji: '☁️', temperature: 23, unit: 'C' },
     { time: '07:00', emoji: '⛈️', temperature: 23, unit: 'C' },

@@ -6,11 +6,11 @@ import { WeatherCard } from '../../components/WeatherCard/WeatherCard'
 import { WeatherStats } from '../../components/WeatherCard/WeatherStats'
 import {WeatherAlerts} from '../../components/WeatherCard/WeatherAlerts'
 import { Settings } from '../../Settings/Settings'
-import { HourlyForecast } from '../../components/WeatherCard/HourlyForecast'
+import { ForecastTab } from '../../components/WeatherCard/ForecastTab'
 import { SavedLocations } from '../../components/WeatherCard/SavedLocations'
 
 
-export const Home = ({ weatherData }: { weatherData: any }) => {
+export const Home = () => {
 
 
   return (
@@ -30,7 +30,7 @@ export const Home = ({ weatherData }: { weatherData: any }) => {
             </div>
 
         </div>
-        <HourlyForecast weatherData={weatherData}/>
+         < ForecastTab/> 
         <SavedLocations/>
     </Container>
 </div>
