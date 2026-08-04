@@ -2,6 +2,7 @@ import React from 'react'
 import { Input } from '../ui/Input'
 import { Search } from 'lucide-react'
 import { Card } from '../ui/Card'
+import { Text } from '../ui/Text'
 
 
 export const SearchBar = () => {
@@ -11,7 +12,7 @@ export const SearchBar = () => {
     
     <div >
         <Card className='w-200 flex justify-center items-center h-16 bg-[#343A46]'>
-            
+          <Text variant={'h1'} className='text-sky-200 text-3xl'>Weather </Text>
             <div className='flex bg-sky-100 rounded-2xl p-3 w-2/3 ml-100 gap-4'>
                  <Search />
                  <Input

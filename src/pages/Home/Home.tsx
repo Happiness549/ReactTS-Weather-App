@@ -12,9 +12,9 @@ import { SavedLocations } from '../../components/WeatherCard/SavedLocations'
 
 export const Home = ({ weatherData }: { weatherData: any }) => {
 
-    
+
   return (
-    <div className='flex self-center items-center h-screen  '>
+    <div className='flex self-center items-center h-screen mr-40%'>
     <Container>
         <Navbar />
         <SearchBar />
