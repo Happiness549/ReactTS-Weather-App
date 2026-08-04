@@ -25,14 +25,15 @@ export const HourlyForecast: React.FC<HourlyForecastProps> = ({ weatherData }) =
   ];
 
   return (
-    <Card className='h-20 p-1 w-195 mb-2 bg-[#343A46] flex gap-15'>
+    <Card className='h-30 p-1 w-195 mb-2 bg-[#343A46] flex gap-15 pl-3 pr-3'>
 
       {hourlyData.map((data) =>(
         <div key={data.time} >
-          <div className='gap'>
+          <div className='gap'> 
               <Text variant={'p'} className='text-white'>{data.time}</Text>
                <Text variant={'p'} className='text-white'>{data.emoji}</Text>
-                 <Text variant={'p'} className='text-white'>{data.temperature} {"\u00B0"} {data.unit}</Text>                                                                     
+                 <Text variant={'p'} className='text-white'>{data.temperature} {"\u00B0"} {data.unit}</Text> 
+                                                                                   
           </div>
         </div>
       ))}

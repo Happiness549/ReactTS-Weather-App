@@ -24,7 +24,9 @@ const dailyData = [
         <div className='flex gap-10'>
             {dailyData.map((data)=>(
              <div>
-                
+                <Text variant={'p'} className='text-white'>{data.day}</Text>
+                <Text variant={'p'} className='text-white'>{data.emoji}</Text>
+                <Text variant={'p'} className='text-white'>{data.temperature} {"\u00B0"} {data.unit}</Text>                                                                     
              </div>
             ))}
         </div>

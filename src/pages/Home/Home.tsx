@@ -11,6 +11,8 @@ import { SavedLocations } from '../../components/WeatherCard/SavedLocations'
 
 
 export const Home = ({ weatherData }: { weatherData: any }) => {
+
+    
   return (
     <div className='flex self-center items-center h-screen  '>
     <Container>
