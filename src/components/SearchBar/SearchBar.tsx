@@ -19,6 +19,7 @@ export const SearchBar = () => {
                     placeholder='Search for a city'
                     value={value}
                     onChange={(e) => setValue(e.target.value)}
+                  
                     />
             </div>
         </Card>

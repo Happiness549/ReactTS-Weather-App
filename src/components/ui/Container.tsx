@@ -8,7 +8,7 @@ interface ContainerProps{
 
 export const Container:React.FC<ContainerProps> = ({children}) => {
   return (
-    <div className='mx-auto w-full max-w-7x1 px-4 sm:px-6 lg:px-8 bg-black'>
+    <div className='mx-auto w-full max-w-7x1 px-4 sm:px-6 lg:px-8 bg-black flex flex-col justify-center '>
     {children}
     
       </div>

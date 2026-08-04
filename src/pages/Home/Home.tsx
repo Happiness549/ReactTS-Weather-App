@@ -10,9 +10,9 @@ import { HourlyForecast } from '../../components/WeatherCard/HourlyForecast'
 import { SavedLocations } from '../../components/WeatherCard/SavedLocations'
 
 
-export const Home = () => {
+export const Home = ({ weatherData }: { weatherData: any }) => {
   return (
-    <div className=''>
+    <div className='flex self-center items-center h-screen  '>
     <Container>
         <Navbar />
         <SearchBar />
@@ -28,7 +28,7 @@ export const Home = () => {
             </div>
 
         </div>
-        <HourlyForecast/>
+        <HourlyForecast weatherData={weatherData}/>
         <SavedLocations/>
     </Container>
 </div>

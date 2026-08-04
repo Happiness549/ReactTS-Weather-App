@@ -4,6 +4,7 @@ interface InputProps{
     placeholder: string;
     value: string;
     onChange:(e: ChangeEvent<HTMLInputElement>) => void;
+    classname?: string;
     
 }
 
@@ -15,6 +16,7 @@ export const Input:React.FC<InputProps> = ({type, placeholder, value, onChange})
           placeholder={placeholder}
           value={value}
           onChange={onChange}
+          className='appearance-none outline-none'
         />
 
     </div>
