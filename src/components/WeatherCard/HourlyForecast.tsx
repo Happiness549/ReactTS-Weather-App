@@ -1,13 +1,13 @@
 import React from 'react'
 import { Card } from "../ui/Card";
 import { Text } from '../ui/Text';
-import type {WeatherData} from '../../types/Weather'
+import type {DailyHourlyData} from '../../types/Weather'
 
 
 
 export const HourlyForecast: React.FC = () => {
 
-  const hourlyData: WeatherData[] = [
+  const hourlyData: DailyHourlyData[] = [
     { time: 'Now', emoji: '☀️', temperature: 23, unit: 'C' },
     { time: '06:00', emoji: '☁️', temperature: 23, unit: 'C' },
     { time: '07:00', emoji: '⛈️', temperature: 23, unit: 'C' },

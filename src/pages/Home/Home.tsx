@@ -8,6 +8,7 @@ import {WeatherAlerts} from '../../components/WeatherCard/WeatherAlerts'
 import { Settings } from '../../Settings/Settings'
 import { ForecastTab } from '../../components/WeatherCard/ForecastTab'
 import { SavedLocations } from '../../components/WeatherCard/SavedLocations'
+import type { DailyHourlyData } from '../../types/Weather'
 import type { WeatherData } from '../../types/Weather'
 
 

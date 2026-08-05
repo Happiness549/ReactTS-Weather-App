@@ -1,4 +1,4 @@
-export interface WeatherData {
+export interface DailyHourlyData {
     time?: string;
     emoji?: string;
     temperature?: number;
@@ -11,3 +11,13 @@ export interface WeatherData {
 }
 
 export type TabOption = 'hourly' | 'daily';
+
+ export interface WeatherData {
+    location: string;
+    temperature: number;
+    unit: 'F' | 'C';
+    condition: string;
+    humidity: number;
+    windSpeed: number;
+    date: string;   
+ }
