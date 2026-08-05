@@ -15,9 +15,9 @@ export const ForecastTab = () => {
     <div className='flex gap-8 '>
         <button 
          onClick={() => setActive('hourly')}
-          className={` font-semibold cursor-pointer pb-2 transition-colors ${
+          className={` font-semibold cursor-pointer  transition-colors ${
             active === 'hourly'
-              ? 'border-b-2 border-cyan-400 text-cyan-200'
+              ? 'border-b-2 border-cyan-400  mt-2 text-blue-300'
               : 'text-gray-400'
         }`}
         
@@ -27,9 +27,9 @@ export const ForecastTab = () => {
 
           <button 
          onClick={() => setActive('daily')}
-          className={` font-semibold cursor-pointer pb-2 transition-colors ${
+          className={` font-semibold cursor-pointer transition-colors ${
             active === 'daily'
-              ? 'border-b-2 border-cyan-400 text-cyan-200'
+              ? 'border-b-2 border-cyan-400 mt-2 text-blue-300'
               : 'text-gray-400'
         }`}
         

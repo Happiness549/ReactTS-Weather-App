@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {useState} from 'react'
 import {Container} from '../../components/ui/Container'
 import { Navbar } from '../../components/Navbar/Navbar'
 import {SearchBar} from '../../components/SearchBar/SearchBar'
@@ -8,10 +8,12 @@ import {WeatherAlerts} from '../../components/WeatherCard/WeatherAlerts'
 import { Settings } from '../../Settings/Settings'
 import { ForecastTab } from '../../components/WeatherCard/ForecastTab'
 import { SavedLocations } from '../../components/WeatherCard/SavedLocations'
+import type { WeatherData } from '../../types/Weather'
 
 
 export const Home = () => {
 
+    const [weather, setWeather] = useState<WeatherData | null>(null);
 
   return (
     <div className='flex self-center items-center h-screen mr-40%'>
