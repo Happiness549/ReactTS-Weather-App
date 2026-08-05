@@ -13,11 +13,27 @@ export interface DailyHourlyData {
 export type TabOption = 'hourly' | 'daily';
 
  export interface WeatherData {
-    location: string;
-    temperature: number;
-    unit: 'F' | 'C';
-    condition: string;
+
+   location: {
+    name: string;
+  };
+  current: {
+    temp_c: number;
     humidity: number;
-    windSpeed: number;
-    date: string;   
- }
+    wind_kph: number;
+    date: string;
+    condition: {
+      text: string;
+      icon: string;
+    };
+  };
+}
+
+    // location: string;
+    // temperature: number;
+    // unit: 'F' | 'C';
+    // condition: string;
+    // humidity: number;
+    // windSpeed: number;
+    // date: string;   
+ 
