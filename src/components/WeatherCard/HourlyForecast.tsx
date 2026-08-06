@@ -17,7 +17,9 @@ export const HourlyForecast: React.FC<HourlyProps> = ({weather}) => {
       {weather.days?.[0].hours.map((hour) =>(
         <div key={hour.datetime} >
           <div className='gap'> 
-              <Text variant={'p'} className='text-white'>{hour.datetime}</Text>
+              <Text variant={'p'} className='text-white'>
+                {new Date(`1970-01-01T${hour.datetime}`).toLocaleTimeString("en-US", { hour: "numeric", hour12: true })}
+              </Text>
                {/* <Text variant={'p'} className='text-white'>{hour.icon}</Text> */}
                  <Text variant={'p'} className='text-white'>{hour.temp}{"\u00B0"}</Text> 
                                                                                    
