@@ -1,32 +1,25 @@
 import React from 'react'
 import { Card } from "../ui/Card";
 import { Text } from '../ui/Text';
-import type {DailyHourlyData} from '../../types/Weather'
+import type {WeatherData} from '../../types/Weather'
 
 
+export interface HourlyProps {
+  weather: WeatherData
+}
 
-export const HourlyForecast: React.FC = () => {
+export const HourlyForecast: React.FC<HourlyProps> = ({weather}) => {
 
-  const hourlyData: DailyHourlyData[] = [
-    { time: 'Now', emoji: '☀️', temperature: 23, unit: 'C' },
-    { time: '06:00', emoji: '☁️', temperature: 23, unit: 'C' },
-    { time: '07:00', emoji: '⛈️', temperature: 23, unit: 'C' },
-    { time: '08:00', emoji: '🌧️', temperature: 23, unit: 'C' },
-    { time: '09:00', emoji: '☀️', temperature: 23, unit: 'C' },
-    { time: '10:00', emoji: '☁️', temperature: 23, unit: 'C' },
-    { time: '11:00', emoji: '⛈️', temperature: 23, unit: 'C' },
-    { time: '12:00', emoji: '🌧️', temperature: 23, unit: 'C' },
-  ];
 
   return (
     <Card className='h-30 p-1 w-195 mb-2 bg-[#343A46] flex gap-15 pl-3 pr-3'>
 
-      {hourlyData.map((data) =>(
-        <div key={data.time} >
+      {weather.days?.[0].hours.map((hour) =>(
+        <div key={hour.datetime} >
           <div className='gap'> 
-              <Text variant={'p'} className='text-white'>{data.time}</Text>
-               <Text variant={'p'} className='text-white'>{data.emoji}</Text>
-                 <Text variant={'p'} className='text-white'>{data.temperature} {"\u00B0"} {data.unit}</Text> 
+              <Text variant={'p'} className='text-white'>{hour.datetime}</Text>
+               {/* <Text variant={'p'} className='text-white'>{hour.icon}</Text> */}
+                 <Text variant={'p'} className='text-white'>{hour.temp}{"\u00B0"}</Text> 
                                                                                    
           </div>
         </div>

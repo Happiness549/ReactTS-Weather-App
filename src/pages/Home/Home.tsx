@@ -28,7 +28,7 @@ useEffect(() => {
 
       const cleanCity = encodeURIComponent(city);
 
-      const url = `https://weather.visualcrossing.com/VisualCrossingWebServices/rest/services/timeline/${cleanCity}?unitGroup=metric&include=current&key=${API_KEY}&contentType=json`;
+      const url = `https://weather.visualcrossing.com/VisualCrossingWebServices/rest/services/timeline/${cleanCity}?unitGroup=metric&include=hours,current&key=${API_KEY}&contentType=json`;
 
       const response = await fetch(url);
 
@@ -38,7 +38,12 @@ useEffect(() => {
 
       const data = await response.json();
 
-      console.log(data);
+         console.log(data.days);
+         console.log(data.days[0]);
+          console.log(data.days[0].hours);
+          console.log(Array.isArray(data.days));
+          console.log(typeof data.days);
+         
 
       setWeather({
         address: data.address,
@@ -47,10 +52,15 @@ useEffect(() => {
         temp: data.currentConditions.temp,
         feelslike: data.currentConditions.feelslike,
         datetime: data.days[0]["datetime"],
-        timezone: data.days,
         conditions: data.currentConditions.conditions,
         icon: data.currentConditions.icon,
-        
+      time: data.currentConditions.datetime,
+        // emoji?
+        // unit
+        days: data.days
+        // tempMax: number;
+        // tempMin?: number; 
+      
       });
       setError(null);
     } catch (err) {
@@ -131,7 +141,7 @@ if(error){
           </div>
         </div>
 
-        <ForecastTab />
+        {weather ? <ForecastTab weather={weather}/> : null}
         <SavedLocations />
       </Container>
     </div>

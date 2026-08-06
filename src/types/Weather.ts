@@ -1,16 +1,23 @@
-export interface DailyHourlyData {
-    time?: string;
-    emoji?: string;
-    temperature?: number;
-    unit?: 'F' | 'C';
+export interface Day {
+    icon?: string;
+    temp?: number;
     day?: string;
-    date?: string; 
-    condition?: string; 
+    datetime?: string; 
+    conditions?: string; 
     tempMax?: number;
     tempMin?: number;
+    hours: Hour[];
+}
+
+export interface Hour{
+  datetime: string;
+  temp: number;
+  conditions: string;
+  icon: string;
 }
 
 export type TabOption = 'hourly' | 'daily';
+
 
  export interface WeatherData {
     address: string;
@@ -21,16 +28,12 @@ export type TabOption = 'hourly' | 'daily';
     datetime: string;
     conditions: string;
     icon: string;
-    timezone: number;
-    
+    unit?: 'F' | 'C';
+    time?: string;
+    days?:Day[];
+
   };
 
 
-    // location: string;
-    // temperature: number;
-    // unit: 'F' | 'C';
-    // condition: string;
-    // humidity: number;
-    // windSpeed: number;
-    // date: string;   
+ 
  
