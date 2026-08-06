@@ -2,8 +2,6 @@ import React, { useState } from 'react'
 import { HourlyForecast } from './HourlyForecast'
 import { DailyForecast } from './DailyForecast'
 import type { TabOption } from '../../types/Weather'
-import { Button } from '../ui/Button'
-import { Card } from '../ui/Card'
 
 
 
@@ -38,7 +36,7 @@ export const ForecastTab = () => {
             Daily
         </button>
          <div>
-        {active === 'hourly' ? <HourlyForecast/> : <DailyForecast/>}
+        {active === 'hourly' ? <HourlyForecast/> : <DailyForecast days={[]} />}
       </div>
 
 

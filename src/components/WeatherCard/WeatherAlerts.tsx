@@ -4,6 +4,7 @@ import { Text } from '../ui/Text'
 import { Umbrella } from 'lucide-react'
 import { Button } from '../ui/Button'
 
+
 export const WeatherAlerts = () => {
   return (
     <Card className=' w-90 h-50 bg-[#343A46] -mt-4 mb-2 p-1'>
