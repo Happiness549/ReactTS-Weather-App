@@ -133,7 +133,7 @@ if(error){
         <div className='flex flex-col md:flex-row gap-6 items-start mt-6 w-full'>
           <div className='relative w-full md:w-auto'>
             <WeatherCard weather={weather}/>
-            <WeatherStats/>
+            {weather && <WeatherStats weather={weather}/>}'
           </div>
           <div className='flex flex-col gap-6'>
             <WeatherAlerts />

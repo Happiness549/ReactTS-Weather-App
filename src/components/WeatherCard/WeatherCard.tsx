@@ -18,7 +18,7 @@ export const WeatherCard:React.FC<WeatherProps> = ({weather}) => {
             <Text variant={'h1'} className='text-6xl text-white'>{weather.address}</Text> 
             <div className='flex gap-40 mt-2'>
               
-              <Text variant={'p'} className='text-white'>{new Date(weather.datetime!).toLocaleDateString('en-US', { weekday: 'long' })}</Text>
+              <Text variant={'p'} className='text-white'>{weather.datetime}</Text>
               <Sun className="text-yellow-500 fill-yellow-200" size={62} 
       />
             </div>

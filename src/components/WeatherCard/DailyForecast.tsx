@@ -16,10 +16,10 @@ export const DailyForecast: React.FC<DailyProps> = ({ weather }) => {
       <div className='flex gap-10'>
         {weather.days?.map((day) => (
           <div key={day.datetime}>
-            <Text variant='p' className='text-white'>{day.datetime} </Text>
+            <Text variant='p' className='text-white'>{new Date(day.datetime!).toLocaleDateString('en-US', { weekday: 'long' })}</Text>
             <Text variant='p' className='text-white'>{day.icon}</Text>
-            <Text variant='p' className='text-white'>{day.tempMax}{"\u00B0"}c</Text>
-            <Text variant='p' className='text-white'> {day.tempMin}{"\u00B0"}c</Text>
+            <Text variant='p' className='text-white'>{day.tempMax}</Text>
+            <Text variant='p' className='text-white'> {day.tempMin}</Text>
           </div>
         ))}
       </div>
