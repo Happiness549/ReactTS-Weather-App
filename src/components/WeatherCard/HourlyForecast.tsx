@@ -12,7 +12,7 @@ export const HourlyForecast: React.FC<HourlyProps> = ({weather}) => {
 
 
   return (
-    <Card className='h-30 p-1 w-195 mb-2 bg-[#343A46] flex gap-15 pl-3 pr-3'>
+    <Card className='h-40 p-4 w-195 mb-2 bg-[#343A46] flex gap-15 pl-3 pr-3 overflow-x-auto scrollbar-track-[#343A46] scrollbar-thumb-sky-300'>
 
       {weather.days?.[0].hours.map((hour) =>(
         <div key={hour.datetime} >

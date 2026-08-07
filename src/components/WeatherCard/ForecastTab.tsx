@@ -13,17 +13,18 @@ export const ForecastTab:React.FC<DailyProps> = ({weather}) => {
 
   return (
     //  <Card className='h-30 p-1 w-195 mb-2 bg-[#343A46] flex gap-15 pl-3 pr-3'>
-    <div className='flex gap-8 '>
+    <div className=' gap-8'>
+      <div className='-mt-4 pl-6'>
         <button 
          onClick={() => setActive('hourly')}
-          className={` font-semibold cursor-pointer  transition-colors ${
+          className={` font-semibold cursor-pointer  transition-colors mr-4 ${
             active === 'hourly'
               ? 'border-b-2 border-cyan-400  mt-2  text-blue-300'
               : 'text-gray-400'
         }`}
         
         >
-            Hourly
+            Hourly Forecast
             </button>
 
           <button 
@@ -36,8 +37,9 @@ export const ForecastTab:React.FC<DailyProps> = ({weather}) => {
         
         
         >
-            Daily
+            Daily Forecast
         </button>
+        </div>
          <div className='mr-100%'>
         {active === 'hourly' ? <HourlyForecast weather={weather}/> : <DailyForecast  weather={weather}/>}
       </div>

@@ -17,7 +17,7 @@ export const Home = () => {
     const [weather, setWeather] = useState<WeatherData | null>(null);
     const [error, setError]= useState<string | null>("");
     const [loading, setLoading] = useState<boolean>(false);
-    const [city, setCity] = useState("johannesburg");
+    const [city, setCity] = useState("Durban");
 
    const API_KEY = import.meta.env.VITE_API_KEY;
 
