@@ -2,6 +2,7 @@ import React from 'react'
 import { Card } from "../ui/Card";
 import { Text } from '../ui/Text';
 import type {WeatherData} from '../../types/Weather'
+import { WeatherIcons } from '../utils/weatherIcons';
 
 
 export interface HourlyProps {
@@ -12,15 +13,15 @@ export const HourlyForecast: React.FC<HourlyProps> = ({weather}) => {
 
 
   return (
-    <Card className='h-40 p-4 w-195 mb-2 bg-[#343A46] flex gap-15 pl-3 pr-3 overflow-x-auto scrollbar-track-[#343A46] scrollbar-thumb-sky-300'>
+    <Card className='h-40 p-4 w-300 mb-2 bg-[#343A46] flex gap-15 pl-3 pr-3 '>
 
-      {weather.days?.[0].hours.map((hour) =>(
+      {weather.days?.[0].hours.slice(0,12).map((hour) =>(
         <div key={hour.datetime} >
           <div className='gap'> 
               <Text variant={'p'} className='text-white'>
-                {new Date(`1970-01-01T${hour.datetime}`).toLocaleTimeString("en-US", { hour: "numeric", hour12: true })}
+                {hour.datetime.slice(0,5)}
               </Text>
-               {/* <Text variant={'p'} className='text-white'>{hour.icon}</Text> */}
+               <Text variant={'p'} className='text-white'>{WeatherIcons(hour.icon)}</Text>
                  <Text variant={'p'} className='text-white'>{hour.temp}{"\u00B0"}</Text> 
                                                                                    
           </div>
